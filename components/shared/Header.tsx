@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import React from "react";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
@@ -16,17 +17,12 @@ const Header = () => {
         <h1 className="text-2xl font-bold">Zoom</h1>
       </div>
 
-      <SignedIn>
-        <UserButton
-          appearance={{
-            elements: {
-              userButtonAvatarBox: {
-                fontSize: "1rem",
-              },
-            },
-          }}
-        />
-      </SignedIn>
+      <div className="flex items-center gap-x-2">
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+        <MobileNav />
+      </div>
     </header>
   );
 };
