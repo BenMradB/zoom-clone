@@ -1,21 +1,56 @@
 # 📹 ZOOM Clone
+
 #### 🏠 Home Page
+
 <p align="left"> <img src="https://github.com/BenMradB/zoom-clone/blob/main/public/images/home.png?raw=true" alt="zoom-home" /> </p>
 
-#### 🏠 Upcoming Meetings
+#### 🤝 Upcoming Meetings
+
 <p align="left"> <img src="https://github.com/BenMradB/zoom-clone/blob/main/public/images/zoom-upcoming.png?raw=true" alt="zoom-home" /> </p>
 
 <p align="left"> <img src="https://github.com/BenMradB/zoom-clone/blob/main/public/images/all.png?raw=true" alt="zoom-home" /> </p>
 
-#### 🏠 Meeting Room
+#### 👥 Meeting Room
+
 <p align="left"> <img src="https://github.com/BenMradB/zoom-clone/blob/main/public/images/meeting-room.png?raw=true" alt="zoom-home" /> </p>
 
+# 🌟 Getting Started
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#### 1 . First Clone The App
 
-## Getting Started
+```bash
+git clone https://github.com/BenMradB/zoom-clone.git
+```
 
-First, run the development server:
+#### 2 . Change the working directory => `zoom-clone` directory
+
+```bash
+cd ./zoom-clone
+```
+
+#### 3 . Install the necessary dependencies
+
+```bash
+npm i
+# or
+npm install
+```
+
+#### 4 . Create a `.env.local` file next to your `package.json` file and paste these env variables
+
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+NEXT_PUBLIC_STREAM_API_KEY=your_stream_public_key
+STREAM_SECRET_KEY=your_stream_secret_key
+NEXT_PUBLIC_BASE_URL=your_base_url # e.g localhost:3000
+```
+
+#### 5 . Run your dev server
 
 ```bash
 npm run dev
@@ -27,23 +62,10 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔗 Clerk Website Link
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[![Clerk JS Link](<https://github.com/BenMradB/zoom-clone/blob/main/public/images/clerk(1).png?raw=true>)](https://clerk.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 🔗 Stream Website Link
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![linkedin](<https://github.com/BenMradB/zoom-clone/blob/main/public/images/stream(1).jpg?raw=true>)](https://getstream.io/video/sdk/react/)
